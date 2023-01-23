@@ -361,9 +361,6 @@ body {
 .footer-wrap-text {
   margin-bottom: 0;
 }
-.footer-socials {
-  margin-right: 80px;
-}
 .footer-socials-text {
   font-weight: 500;
   margin-top: 0;
@@ -402,6 +399,7 @@ body {
   gap: 24px;
   width: 453px;
   height: 80px;
+  margin-left: auto;
 }
 .footer-form-label {
   font-weight: 500;
@@ -597,7 +595,7 @@ body {
 
   display: block;
   width: 408px;
-  height: 576px;
+  min-height: 584px;
   padding: 24px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -639,7 +637,7 @@ body {
 }
 .form-caption {
   display: block;
-  margin: 24px auto 16px;
+  margin: 16px auto;
   font-weight: 500;
   letter-spacing: 0.02em;
 
@@ -715,8 +713,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 8px 16px;
-  margin-top: 4px;
-  margin-bottom: 16px;
+  margin: 4px 0 0 0;
   font-size: 12px;
   line-height: 1.3;
   letter-spacing: 0.04em;
@@ -743,13 +740,16 @@ body {
   margin-bottom: 24px;
 }
 .modal-form-check-label {
-  padding: 0 0 0 24px;
+padding-left: 24px;
+
 font-weight: 400;
 font-size: 12px;
 line-height: 1.33;
 letter-spacing: 0.04em;
 
 color: #757575;
+
+cursor: pointer;
 }
 
 .modal-form-check-click {
@@ -780,12 +780,15 @@ color: #757575;
   background-image: url(../images/default.svg);
   background-repeat: no-repeat;
   background-size: contain;
-}
+  }
 .modal-form-check {
   appearance: none;
+  position: absolute;
 }
 .modal-form-check-link {
   color: var(--primary-brand-color);
+  padding: 0;
+  margin: 0;
 
   transition: color var(--transit-data);
 }
@@ -794,4 +797,26 @@ color: #757575;
   color:var(--brand-hovered-color);
 }
 .modal-form-btn {
+  display: block;
+  width: 169px;
+  height: 56px;
+  margin: 0 auto;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 1.5;
+letter-spacing: 0.04em;
+text-align: center;
+
+
+color: #FFFFFF;
+
+  background-color:var(--primary-brand-color);
+  
+  transition: background-color var(--transit-data);
+}
+.modal-form-btn:focus,
+.modal-form-btn:hover {
+  background-color: var(--brand-hovered-color);
 }
