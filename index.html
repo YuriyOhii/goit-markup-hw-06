@@ -433,10 +433,10 @@
         </div>
         <!-- FORM FOR SUBSCRIBING -->
         <form class="footer-form">
+          <label for="subscribe-email" class="footer-form-label"
+            >Subscribe</label
+          >
           <div class="footer-form-wrap">
-            <label for="subscribe-email" class="footer-form-label"
-              >Subscribe</label
-            >
             <input
               id="subscribe-email"
               class="footer-form-input"
@@ -445,13 +445,14 @@
               placeholder="E-mail"
               required
             />
+
+            <button class="buttons footer-form-btn" type="submit">
+              Subscribe
+              <svg class="footer-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
           </div>
-          <button class="buttons footer-form-btn" type="submit">
-            Subscribe
-            <svg class="footer-btn-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-subscribe"></use>
-            </svg>
-          </button>
         </form>
       </div>
     </footer>
@@ -503,18 +504,20 @@
               </svg>
             </label>
           </div>
-          <label for="text-area" class="modal-form-label-textarea"
-            >Comment</label
-          >
-          <textarea
-            id="text-area"
-            class="modal-form-textarea"
-            name="user-comment"
-            placeholder="Text input"
-          ></textarea>
+          <div class="modal-form-textarea-container">
+            <label for="text-area" class="modal-form-label-textarea"
+              >Comment</label
+            >
+            <textarea
+              id="text-area"
+              class="modal-form-textarea"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
           <div class="modal-form-check-wrap">
             <label class="modal-form-check-label">
-                            <input
+              <input
                 class="modal-form-check"
                 type="checkbox"
                 name="privat-policy"
@@ -522,7 +525,10 @@
               />
               <svg class="modal-form-check-click" width="16" height="16">
                 <use href="./images/icons.svg#icon-privat-click"></use>
-              </svg>I accept the terms and conditions of the
+              </svg>
+              <span class="modal-form-check-text">
+                I accept the terms and conditions of the
+              </span>
               <a class="modal-form-check-link" href="">Privacy Policy</a>
             </label>
           </div>
